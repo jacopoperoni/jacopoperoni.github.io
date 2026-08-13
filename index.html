@@ -3,16 +3,163 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jacopo Peroni</title>
-    <meta name="description" content="Researcher portfolio" />
-    <meta name="author" content="Jacopo Peroni"/>
+
+    <title>Jacopo Peroni — PhD Student in Mathematics, University of Münster</title>
+    <meta name="description" content="Jacopo Peroni is a PhD student in the Mathematics Cluster of Excellence at the University of Münster, supervised by Hendrik Weber. Research on singular SPDEs, mathematical physics and probability, and the rigorous construction of QFT measures." />
+    <meta name="author" content="Jacopo Peroni" />
+    <meta name="google-site-verification" content="k9EvkeYtb4XOn1Ki0Iz5axj1bDPAAEUQJirWZAvhPuc" />
+    <link rel="canonical" href="https://jacopoperoni.github.io/" />
+
+    <!-- Open Graph / social previews -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Jacopo Peroni — PhD Student in Mathematics, University of Münster" />
+    <meta property="og:description" content="PhD student in the Mathematics Cluster of Excellence at the University of Münster. Singular SPDEs, mathematical physics and probability." />
+    <meta property="og:url" content="https://jacopoperoni.github.io/" />
+    <meta property="og:image" content="https://jacopoperoni.github.io/assets/profile_pic.JPG" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="profile:first_name" content="Jacopo" />
+    <meta property="profile:last_name" content="Peroni" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Jacopo Peroni — PhD Student in Mathematics, University of Münster" />
+    <meta name="twitter:description" content="PhD student in the Mathematics Cluster of Excellence at the University of Münster. Singular SPDEs, mathematical physics and probability." />
+    <meta name="twitter:image" content="https://jacopoperoni.github.io/assets/profile_pic.JPG" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+    <!--
+      Person structured data. The sameAs list is what tells search engines this
+      site is the same Jacopo Peroni as the ORCID / Münster / LinkedIn / GitHub
+      profiles that already rank, so this page joins that entity instead of
+      competing with it as an unknown page.
+    -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Jacopo Peroni",
+      "givenName": "Jacopo",
+      "familyName": "Peroni",
+      "url": "https://jacopoperoni.github.io/",
+      "image": "https://jacopoperoni.github.io/assets/profile_pic.JPG",
+      "jobTitle": "PhD Student in Mathematics",
+      "email": "mailto:jacopo.peroni@uni-muenster.de",
+      "description": "PhD student in the Mathematics Cluster of Excellence at the University of Münster, working on singular SPDEs and their use in the rigorous construction and study of quantum field theory measures.",
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Münster",
+        "url": "https://www.uni-muenster.de/"
+      },
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Mathematics Münster — Cluster of Excellence, University of Münster",
+        "url": "https://www.uni-muenster.de/MathematicsMuenster/"
+      },
+      "workLocation": {
+        "@type": "Place",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Orléans-Ring 10, Room 130.020",
+          "postalCode": "48149",
+          "addressLocality": "Münster",
+          "addressCountry": "DE"
+        }
+      },
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "École Polytechnique Fédérale de Lausanne (EPFL)",
+          "url": "https://www.epfl.ch/"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "University of Milan",
+          "url": "https://www.unimi.it/"
+        }
+      ],
+      "knowsAbout": [
+        "Singular stochastic partial differential equations",
+        "Stochastic quantisation",
+        "Mathematical physics",
+        "Probability theory",
+        "Constructive quantum field theory",
+        "Dynamical systems",
+        "Statistical mechanics"
+      ],
+      "sameAs": [
+        "https://orcid.org/0009-0002-0557-206X",
+        "https://www.uni-muenster.de/AMM/weber/mitarbeiter/team/peroni/index.html",
+        "https://www.linkedin.com/in/jacopo-peroni-488321143/",
+        "https://github.com/jacopoperoni"
+      ]
+    }
+    </script>
   </head>
 
   <body>
-    <div id="root"></div>
+    <!--
+      The markup inside #root is a crawler fallback, not part of the app.
+      This is a client-rendered SPA, so without it the HTML served to a crawler
+      contains no text at all. React's createRoot().render() in src/main.tsx
+      replaces the container's children on mount, so visitors never see this.
+
+      Keep it in sync with src/components/{Hero,About,Publications,Conferences,Contact}.tsx
+      when that content changes.
+    -->
+    <div id="root">
+      <div style="max-width:48rem;margin:0 auto;padding:2rem 1rem;font-family:Inter,system-ui,sans-serif;line-height:1.6">
+        <h1>Jacopo Peroni</h1>
+        <p><strong>PhD Student in Mathematics</strong><br />University of Münster</p>
+
+        <h2>About</h2>
+        <p>
+          I am a PhD student in the Mathematics Cluster of Excellence at the University of Münster
+          under the supervision of
+          <a href="https://www.uni-muenster.de/AMM/en/weber/index.shtml">Prof. Hendrik Weber</a>
+          since October 2025.
+        </p>
+        <p>
+          My research interests lie in the intersection between mathematical physics and probability.
+          More precisely singular SPDEs and their use to construct rigorously and study QFT's measures.
+          I have a secondary interest in dynamical systems and statistical mechanics.
+          I am an enthusiast of physics.
+        </p>
+        <p>
+          Before starting my PhD, I completed my master's degree at EPFL under the supervision of
+          <a href="https://www.hairer.org/">Prof. Martin Hairer</a>.
+          I completed my bachelor's degree at University of Milan.
+        </p>
+
+        <h2>Publications and preprints</h2>
+        <ul>
+          <li>
+            <strong>Quasi shift invariance of &Phi;<sup>4</sup> measures</strong><br />
+            Martin Hairer, Jacopo Peroni — In progress
+          </li>
+        </ul>
+
+        <h2>Talks</h2>
+        <ul>
+          <li>
+            <strong>Quasi-translation invariance for non-Gaussian measures</strong><br />
+            Group Seminar, University of Münster — June 2025
+          </li>
+        </ul>
+
+        <h2>Contact</h2>
+        <p>
+          Email: <a href="mailto:jacopo.peroni@uni-muenster.de">jacopo.peroni@uni-muenster.de</a><br />
+          Office: Room 130.020, Orléans-Ring 10, 48149 Münster
+        </p>
+        <p>
+          <a href="https://www.uni-muenster.de/AMM/weber/mitarbeiter/team/peroni/index.html">University of Münster profile</a> ·
+          <a href="https://orcid.org/0009-0002-0557-206X">ORCID</a> ·
+          <a href="https://www.linkedin.com/in/jacopo-peroni-488321143/">LinkedIn</a> ·
+          <a href="https://github.com/jacopoperoni">GitHub</a>
+        </p>
+      </div>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
