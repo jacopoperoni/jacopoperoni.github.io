@@ -4,39 +4,21 @@ import { Calendar, MapPin } from "lucide-react";
 const Conferences = () => {
   const conferences = [
     {
-      name: "International Conference Name",
-      type: "Oral Presentation",
-      location: "City, Country",
-      date: "Month Year",
-      title: "Title of Your Presentation"
-    },
-    {
-      name: "Another Conference Name",
-      type: "Poster Presentation",
-      location: "City, Country",
-      date: "Month Year",
-      title: "Title of Your Poster"
-    },
-    {
-      name: "Workshop Name",
-      type: "Panel Discussion",
-      location: "City, Country",
-      date: "Month Year",
-      title: "Discussion Topic"
+      name: "Group Seminar",
+      location: "University of Münster",
+      date: "June 2025",
+      title: "Quasi-translation invariance for non-Gaussian measures"
     }
   ];
 
   return (
     <section id="conferences" className="py-20 bg-background">
       <div className="container px-4 max-w-5xl">
-        <h2 className="mb-12 text-4xl font-bold text-foreground font-serif">Conferences & Talks</h2>
+        <h2 className="mb-12 text-4xl font-bold text-foreground font-serif">Talks</h2>
         <div className="grid gap-6 md:grid-cols-2">
           {conferences.map((conf, index) => (
             <Card key={index} className="p-6 hover:shadow-lg transition-shadow border-border bg-card">
               <div className="mb-3">
-                <span className="inline-block px-3 py-1 text-xs font-semibold rounded-full bg-accent/10 text-accent mb-3">
-                  {conf.type}
-                </span>
                 <h3 className="text-lg font-semibold text-card-foreground font-serif">
                   {conf.name}
                 </h3>

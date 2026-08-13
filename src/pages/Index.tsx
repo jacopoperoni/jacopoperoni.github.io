@@ -13,6 +13,7 @@ const Index = () => {
         <Hero />
         <About />
         <Publications />
+        <Conferences />
         <Contact />
       </main>
       <footer className="py-8 bg-primary text-primary-foreground">
