@@ -41,6 +41,13 @@ const Navigation = () => {
             </Button> 
             <Button 
               variant="ghost" 
+              onClick={() => scrollToSection('teaching')}
+              className="text-sm md:text-base"
+            >
+              Teaching
+            </Button>
+            <Button 
+              variant="ghost" 
               onClick={() => scrollToSection('contact')}
               className="text-sm md:text-base"
             >

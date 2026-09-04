@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Publications from "@/components/Publications";
 import Conferences from "@/components/Conferences";
+import Teaching from "@/components/Teaching";
 import Contact from "@/components/Contact";
 
 const Index = () => {
@@ -14,6 +15,7 @@ const Index = () => {
         <About />
         <Publications />
         <Conferences />
+        <Teaching />
         <Contact />
       </main>
       <footer className="py-8 bg-primary text-primary-foreground">
