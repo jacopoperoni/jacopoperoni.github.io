@@ -4,7 +4,7 @@ import { Calendar, MapPin } from "lucide-react";
 const Teaching = () => {
   const teaching = [
     {
-      name: "TA for Partial Differential Equations II",
+      name: "TA for Partial Differential Equations I",
       location: "University of Münster",
       date: "2026 Fall"
     }
