@@ -8,6 +8,22 @@ const Conferences = () => {
       location: "University of Münster",
       date: "June 2025",
       title: "Quasi-translation invariance for non-Gaussian measures"
+    },
+    {
+      name: "Short Talk - Japanese German conference in Stochastic Analysis",
+      location: "University of Bielefeld",
+      date: "September 2026",
+      title: () => (
+        <>
+         Quasi shift invariance of <InlineMath math="\Phi^4" /> measures
+        </> 
+            ),
+    },
+    {
+      name: "AI Talk - RTG DFG Retreat",
+      location: "Bremerhaven",
+      date: "October 2026",
+      title: "Agentic AI for Mathematics",
     }
   ];
 
