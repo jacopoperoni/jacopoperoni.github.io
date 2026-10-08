@@ -1,29 +1,30 @@
 import { Card } from "@/components/ui/card";
 import { Calendar, MapPin } from "lucide-react";
+import { InlineMath } from "react-katex";
 
 const Conferences = () => {
   const conferences = [
-    {
-      name: "Group Seminar",
-      location: "University of Münster",
-      date: "June 2025",
-      title: "Quasi-translation invariance for non-Gaussian measures"
-    },
-    {
-      name: "Short Talk",
-      location: "Japanese German conference in Stochastic Analysis, University of Bielefeld",
-      date: "September 2026",
-      title: () => (
-        <>
-         Quasi shift invariance of <InlineMath math="\Phi^4" /> measures
-        </> 
-            ),
-    },
     {
       name: "AI Talk",
       location: "RTG DFG Retreat, Bremerhaven",
       date: "October 2026",
       title: "Agentic AI for Mathematics",
+    },
+    {
+      name: "Short Talk",
+      location: "Japanese German conference in Stochastic Analysis, University of Bielefeld",
+      date: "September 2026",
+      title: (
+        <>
+          Quasi shift invariance of <InlineMath math="\Phi^4" /> measures
+        </>
+      ),
+    },
+    {
+      name: "Group Seminar",
+      location: "University of Münster",
+      date: "June 2025",
+      title: "Quasi-translation invariance for non-Gaussian measures"
     }
   ];
 
