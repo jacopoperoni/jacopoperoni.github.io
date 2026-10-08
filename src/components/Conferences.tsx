@@ -10,8 +10,8 @@ const Conferences = () => {
       title: "Quasi-translation invariance for non-Gaussian measures"
     },
     {
-      name: "Short Talk - Japanese German conference in Stochastic Analysis",
-      location: "University of Bielefeld",
+      name: "Short Talk",
+      location: "Japanese German conference in Stochastic Analysis, University of Bielefeld",
       date: "September 2026",
       title: () => (
         <>
@@ -20,8 +20,8 @@ const Conferences = () => {
             ),
     },
     {
-      name: "AI Talk - RTG DFG Retreat",
-      location: "Bremerhaven",
+      name: "AI Talk",
+      location: "RTG DFG Retreat, Bremerhaven",
       date: "October 2026",
       title: "Agentic AI for Mathematics",
     }
