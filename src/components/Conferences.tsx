@@ -1,61 +1,45 @@
-import { Card } from "@/components/ui/card";
-import { Calendar, MapPin } from "lucide-react";
 import { InlineMath } from "react-katex";
 
 const Conferences = () => {
   const conferences = [
     {
-      name: "AI Talk",
-      location: "RTG DFG Retreat, Bremerhaven",
-      date: "October 2026",
       title: "Agentic AI for Mathematics",
+      kind: "AI Talk",
+      institution: "RTG DFG Retreat, Bremerhaven",
+      date: "October 2026",
     },
     {
-      name: "Short Talk",
-      location: "Japanese German conference in Stochastic Analysis, University of Bielefeld",
-      date: "September 2026",
       title: (
         <>
           Quasi shift invariance of <InlineMath math="\Phi^4" /> measures
         </>
       ),
+      kind: "Short Talk, Japanese German Conference in Stochastic Analysis",
+      institution: "University of Bielefeld",
+      date: "September 2026",
     },
     {
-      name: "Group Seminar",
-      location: "University of Münster",
+      title: "Quasi-translation invariance for non-Gaussian measures",
+      kind: "Group Seminar",
+      institution: "University of Münster",
       date: "June 2025",
-      title: "Quasi-translation invariance for non-Gaussian measures"
-    }
+    },
   ];
 
   return (
-    <section id="conferences" className="py-20 bg-background">
+    <section id="conferences" className="py-16 bg-background">
       <div className="container px-4 max-w-5xl">
-        <h2 className="mb-12 text-4xl font-bold text-foreground font-serif">Talks</h2>
-        <div className="grid gap-6 md:grid-cols-2">
+        <h2 className="mb-8 text-4xl font-bold text-foreground font-serif">Talks</h2>
+        <ul className="divide-y divide-border border-t border-b border-border">
           {conferences.map((conf, index) => (
-            <Card key={index} className="p-6 hover:shadow-lg transition-shadow border-border bg-card">
-              <div className="mb-3">
-                <h3 className="text-lg font-semibold text-card-foreground font-serif">
-                  {conf.name}
-                </h3>
-              </div>
-              <p className="text-card-foreground/90 mb-4 leading-relaxed">
-                {conf.title}
-              </p>
-              <div className="space-y-2 text-sm text-muted-foreground">
-                <div className="flex items-center gap-2">
-                  <MapPin className="w-4 h-4" />
-                  <span>{conf.location}</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Calendar className="w-4 h-4" />
-                  <span>{conf.date}</span>
-                </div>
-              </div>
-            </Card>
+            <li key={index} className="py-3">
+              <span className="text-card-foreground font-serif">{conf.title}</span>
+              <span className="text-muted-foreground">
+                {" "}— {conf.kind}, <strong className="font-semibold text-card-foreground">{conf.institution}</strong>, {conf.date}
+              </span>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </section>
   );
